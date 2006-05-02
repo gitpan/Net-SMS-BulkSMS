@@ -1,6 +1,7 @@
-BulkSMS.pm
 Changes
 Makefile.PL
 MANIFEST
 README
-t/1.t
+t/Net-SMS-BulkSMS.t
+lib/Net/SMS/BulkSMS.pm
+META.yml                                 Module meta-data (added by MakeMaker)

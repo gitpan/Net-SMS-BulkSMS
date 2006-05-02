@@ -1,5 +1,7 @@
 Revision history for Perl extension Net::SMS::BulkSMS.
 
+1.01  Sun May 01 21:20:00 2006
+   - add call to env_proxy() to allow use behind a firewall HTTP proxy gateway
 1.00  Wed Apr 13 08:21:17 2005
-	- original version
+   - original version
 

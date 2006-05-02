@@ -1,16 +1,14 @@
 # Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl 1.t'
+# `make test'. After `make install' it should work as `perl Net-SMS-BulkSMS.t'
 
 #########################
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More;
-BEGIN { plan tests => 5 };
-use Net::SMS::BulkSMS;
+use Test::More tests => 5;
+BEGIN { use_ok('Net::SMS::BulkSMS') };
 use MIME::Base64;
 use Data::Dumper;
-ok(1); # If we made it this far, we're ok.
 
 #########################
 

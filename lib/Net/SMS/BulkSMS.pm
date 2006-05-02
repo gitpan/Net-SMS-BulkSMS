@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use Carp;
 use HTTP::Request::Common;
@@ -136,8 +136,9 @@ sub transaction
    my $req = POST $url, [ %arg ];
 
    my $ua = LWP::UserAgent->new;
+   $ua->env_proxy(); # allow for loading of proxy settings from *_proxy env vars; see "perldoc LWP::UserAgent" for details
 	my $res = $ua->request($req);
-
+	
    if ( $res->is_success ) # web request worked
    {
       return ($res->content, 1);
@@ -547,7 +548,7 @@ C<Net::SMS::BulkSMS> was developed by Peter Edwards <peterdragon@users.sourcefor
 
 =head1 COPYRIGHT
 
-Copyright 2005 Peter Edwards <peterdragon@users.sourceforge.net>.
+Copyright 2006 Peter Edwards <peterdragon@users.sourceforge.net>.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

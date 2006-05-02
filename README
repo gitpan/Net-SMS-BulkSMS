@@ -1,9 +1,9 @@
-Net/SMS/BulkSMS version 1.00
+Net/SMS/BulkSMS version 1.01
 ============================
 
 Net::SMS::BulkSMS is a perl module that provides a calling interface and transport
 to send SMS messages via www.bulksms.com. To use it you will need to register
-an account at www.bulksms.co.uk and give your account details when calling the module.
+an account at www.bulksms.com and give your account details when calling the module.
 
 INSTALLATION
 
@@ -22,7 +22,7 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2005 Peter Edwards <peterdragon@users.sourceforge.net>
+Copyright (C) 2006 Peter Edwards <peterdragon@users.sourceforge.net>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
