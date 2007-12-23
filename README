@@ -1,4 +1,4 @@
-Net/SMS/BulkSMS version 1.01
+Net/SMS/BulkSMS version 1.02
 ============================
 
 Net::SMS::BulkSMS is a perl module that provides a calling interface and transport
@@ -22,7 +22,7 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2006 Peter Edwards <peterdragon@users.sourceforge.net>
+Copyright (C) 2007 Peter Edwards <peter@dragonstaff.co.uk>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
